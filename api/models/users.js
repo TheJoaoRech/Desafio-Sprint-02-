@@ -19,8 +19,26 @@ module.exports = (sequelize, DataTypes) => {
       }
     }
     },
-    cpf: DataTypes.STRING,
-    birthdate: DataTypes.DATEONLY
+
+    cpf: {
+      type: DataTypes.STRING,
+      validate: {
+        is: {
+          args: /^\d{3}\.\d{3}\.\d{3}\-\d{2}$/,
+          msg: "You must enter a valid cpf to register!"
+        }
+      }
+      },
+
+      birthdate: {
+        type: DataTypes.DATEONLY,
+        validate: {
+        isBefore: {
+        args: "2004-14-05",
+        msg: "You must be over eighteen years of age to register!"
+      }
+    }
+  }
   }, {
     sequelize,
     modelName: 'Users',
