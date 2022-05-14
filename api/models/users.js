@@ -35,7 +35,7 @@ module.exports = (sequelize, DataTypes) => {
         validate: {
         isBefore: {
         args: "2004-14-05",
-        msg: "You must be over eighteen years of age to register!"
+        msg: "You must be over eighteen years old of age to register!"
       }
     }
   }
