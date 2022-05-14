@@ -6,6 +6,6 @@ const port = 3000
 
 routes(app)
 
-app.listen(port, () => console.log(`O servidor está rodando na porta ${port}!`))
+app.listen(port, () => console.log(`The server is running on the port: ${port}!`))
 
 module.exports = app
