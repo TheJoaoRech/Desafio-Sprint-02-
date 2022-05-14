@@ -22,6 +22,16 @@ class UserController {
             return res.status(500).json(error.message)
         }
     }
+
+    static async CreateUser(req, res){
+        const newUser = req.body
+        try {
+            const newUserCreated = await database.Users.create(newUser)
+            return res.status(201).json(newUserCreated)
+        } catch (error) {
+            return res.status(500).json(error.message)
+        }
+    }
 }
 
 module.exports = UserController
