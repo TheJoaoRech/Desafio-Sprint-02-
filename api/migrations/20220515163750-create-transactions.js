@@ -17,6 +17,9 @@ module.exports = {
       sendTo: {
         type: Sequelize.STRING
       },
+      receiverFrom: {
+        type: Sequelize.STRING
+      },
       currentCotation: {
         type: Sequelize.FLOAT
       },
