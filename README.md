@@ -30,6 +30,39 @@ Put - ('/api/v1/wallet/:id') - Usado para atualizar os dados de uma carteira esp
 Delete - ('/api/v1/wallet/:id') - Usado para deletar uma carteira específica.
 ```
 
+<h1 align=> 📁 Bancos de dados criados: </h1>
+
+```
+*------------------------------------*                            
+| Database: Users - (Wallet)         |
+|------------------------------------|
+| name - string                      |
+| cpf - string                       |
+| birthdate - dateonly               |
+*------------------------------------*
+
+*------------------------------------*
+| Database: Coins                    |
+|------------------------------------|
+| coins - string                     |
+| fullname - string                  |
+| amont - float                      |
+*------------------------------------*
+
+*------------------------------------*
+| Database: Transactions             |
+|------------------------------------|
+| value - string                     |
+| datetime - dateonly                |  
+| sendTo - string                    |
+| receiveFrom - string               |
+| currentCotation -float             |
+| quoteTo - string                   |
+| currentCoin - string               |
+| receiverAdress - string            |
+*------------------------------------*
+```
+
 <h1 align=> 🖌️ Autor: </h1>
 
 * **João Vítor Rech** - [Link do Perfil](https://github.com/TheJoaoRech)
