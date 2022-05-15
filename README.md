@@ -1,24 +1,34 @@
 <h1 align="center"> 💰 CARTEIRA DE CRIPTOMOEDAS 💰 </h1>
+Este projeto tem como objetivo central ser uma API que armazena dados de várias criptomoedas em carteiras individuais.
+
+
+<h1 align=> 📖 Dependências utilizadas: </h1>
+Abaixo estão algumas libs e frameworks utilizados no projeto:
 
 ```
-  Este projeto tem como objetivo central ser uma API que armazena dados de várias criptomoedas em carteiras individuais.
-```
+Libs:
+"body-parser": "^1.20.0",
+"mysql2": "^2.3.3",
+"path": "^0.12.7",
+"sequelize": "^6.19.0",
+"sequelize-cli": "^6.4.1"
 
-<h1 align=> 📖 Pré-requisitos: </h1>
-Para começar, algumas dependências devem ser instaladas:
-
-```
-npm install --save-dev nodemon
-npm install body-parser
-npm install express
-npm install mysql2
-npm install sequelize 
-npm install sequelize-cli
-npm install path
+Frameworks:
+"express": "^4.18.1"
 ```
 <h1 align=> 🔨 Construído com: </h1>
 
 * [API de Cotações de Moedas](https://docs.awesomeapi.com.br/api-de-moedas) - Tem como objetivo informar ao script a cotação em tempo real das moedas utilizadas.
+
+<h1 align=> 📃 Endpoints da aplicação: </h1>
+
+```
+Get - ('/api/v1/wallet') - Usado para pegar todos as carteiras cadastradas.
+Get - ('/api/v1/wallet/:id') - Usado para pegar uma carteira específica.
+Post - ('/api/v1/wallet') - Usado para criar uma nova carteira.
+Put - ('/api/v1/wallet/:id') - Usado para atualizar os dados de uma carteira específica.
+Delete - ('/api/v1/wallet/:id') - Usado para deletar uma carteira específica.
+```
 
 <h1 align=> 🖌️ Autor: </h1>
 
